@@ -1,0 +1,21 @@
+
+
+class CategoryButton extends StatelessWidget {
+  final String text;
+  final IconData icon;
+
+  CategoryButton(this.text, this.icon);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Icon(icon, size: 40),
+        ),
+        Text(text),
+      ],
+     );
+  }
+}
