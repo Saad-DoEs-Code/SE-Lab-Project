@@ -275,3 +275,21 @@ class ProductDescriptionScreen extends StatelessWidget {
   onTapSignIn(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.loginPageScreen);
   }
+
+    /// Section Widget
+  Widget _buildSignUp(BuildContext context) {
+    return CustomOutlinedButton(width: 149.h, text: "Sign Up");
+  }
+
+  /// Section Widget
+  Widget _buildSignIn(BuildContext context) {
+    return CustomElevatedButton(
+        height: 56.v,
+        width: 149.h,
+        text: "Sign in",
+        buttonStyle: CustomButtonStyles.fillRedA,
+        buttonTextStyle: CustomTextStyles.bodyMediumOnSecondaryContainer,
+        onPressed: () {
+          onTapSignIn(context);
+        });
+  }
